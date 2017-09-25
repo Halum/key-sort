@@ -19,7 +19,8 @@
     "ksort",
     "k-sort",
     "associative-array",
-    "sort"
+    "sort",
+    "php ksort"
   ],
   "author": "Sajjad Hossain",
   "license": "MIT",
