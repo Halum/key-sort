@@ -15,11 +15,19 @@ NODE v0.8.0 or higher
 ### Install Process
 npm install key-sort
 
-## Examples
+## I/O
+
 #### Input
 - Input should always be an associative array.
 - Provided array should contain objects and each object should have only one property.
 - Property value can be either primitive data types or another associative array.
+#### Output
+- Returns array sorted by property name.
+- Also modifies input array.
+- Nested sorting is default.
+- Pass **false** for not nesting sort.
+
+## Examples
 
 #### Simple
 ```
@@ -74,4 +82,4 @@ N/A
 
 **Original Author**
 
-* [Sjjad Hossain](https://github.com/Halum)
+* [Sajjad Hossain](https://github.com/Halum)
