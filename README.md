@@ -8,12 +8,10 @@ This is a implementation of [PHP ksort()](http://php.net/manual/en/function.ksor
 
 ## Installation
 
-### Requirements
+```npm install key-sort```
 
+#### Requirements
 NODE v0.8.0 or higher
-
-### Install Process
-npm install key-sort
 
 ## I/O
 
@@ -30,7 +28,7 @@ npm install key-sort
 ## Examples
 
 #### Simple
-```
+```javascript
 const keySort = require('key-sort');
 
 let arr = [
@@ -44,7 +42,7 @@ let sortedArr = keySort(arr);
 ```
 
 #### Nested
-```
+```javascript
 const keySort = require('key-sort');
 
 let arr = [
@@ -60,7 +58,7 @@ let sortedArr = keySort(arr);
 ```
 
 #### Not Nested
-```
+```javascript
 const keySort = require('key-sort');
 
 let arr = [
