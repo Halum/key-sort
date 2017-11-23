@@ -1,6 +1,6 @@
 {
   "name": "key-sort",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Sorts an array by key, maintaining key to data correlations. This is useful mainly for associative arrays.",
   "main": "index.js",
   "engines": {

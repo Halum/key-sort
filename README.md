@@ -2,9 +2,10 @@
 
 ## Introduction
 
-
 Sorts an array by key, maintaining key to data correlations. This is useful mainly for associative arrays.
 This is a implementation of [PHP ksort()](http://php.net/manual/en/function.ksort.php) without any **sort_flags**.
+
+> To convert in object/array into associative array, please see [object-to-associative-array](https://www.npmjs.com/package/object-to-associative-array)
 
 ## Installation
 
@@ -22,12 +23,12 @@ NODE v0.8.0 or higher
 #### Output
 - Returns array sorted by property name.
 - Also modifies input array.
-- Nested sorting is default.
+- Deep sorting is default.
 - Pass **false** for not nesting sort.
 
 ## Examples
 
-#### Simple
+##### Simple Sort
 ```javascript
 const keySort = require('key-sort');
 
@@ -41,7 +42,7 @@ let sortedArr = keySort(arr);
 // [{greeting: 'Welcome to'},{middle: 'hello'},{world: 'world'}]
 ```
 
-#### Nested
+##### Deep Sort
 ```javascript
 const keySort = require('key-sort');
 
@@ -57,7 +58,7 @@ let sortedArr = keySort(arr);
 // [{"a" :[{"d" :25},{"f" :365}]},{"x" :1}]
 ```
 
-#### Not Nested
+##### Shallow Sort
 ```javascript
 const keySort = require('key-sort');
 
@@ -81,3 +82,6 @@ N/A
 **Original Author**
 
 * [Sajjad Hossain](https://github.com/Halum)
+
+## Lisence
+[MIT](https://github.com/Halum/key-sort/blob/master/LICENSE)
